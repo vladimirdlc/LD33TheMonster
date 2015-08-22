@@ -8,6 +8,7 @@ public class TopDownController : MonoBehaviour {
     {
         mouseLook();
 
+
     }
 
     void mouseLook()
@@ -19,11 +20,11 @@ public class TopDownController : MonoBehaviour {
         transform.rotation = rot;
         transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
         GetComponent<Rigidbody2D>().angularVelocity = 0;
-
+        
         float inputVertical = Input.GetAxis("Vertical");
         float inputHorizontal = Input.GetAxis("Horizontal");
 
-        GetComponent<Rigidbody2D>().AddForce(gameObject.transform.up * speed * inputVertical * Time.deltaTime);
-        GetComponent<Rigidbody2D>().AddForce(gameObject.transform.right * speed * inputHorizontal * Time.deltaTime);
+        GetComponent<Rigidbody2D>().AddForce(Vector2.up * speed * inputVertical * Time.deltaTime);
+        GetComponent<Rigidbody2D>().AddForce(Vector2.right * speed * inputHorizontal * Time.deltaTime);
     }
 }
