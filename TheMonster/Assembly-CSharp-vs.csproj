@@ -56,6 +56,9 @@
      <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
      <Compile Include="Assets\Scripts\Controls\TopDownController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\UI\Typewritter.cs" />
+     <Compile Include="Assets\Scripts\Weapons\Sword.cs" />
      <None Include="Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
  <Reference Include="UnityEngine.UI">

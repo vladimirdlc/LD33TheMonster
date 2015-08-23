@@ -4,11 +4,14 @@ using System.Collections;
 public class TopDownController : MonoBehaviour {
     public float speed;
 
+    void Update()
+    {
+        checkAttack();
+    }
+
     void FixedUpdate()
     {
         mouseLook();
-
-
     }
 
     void mouseLook()
@@ -26,5 +29,13 @@ public class TopDownController : MonoBehaviour {
 
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * speed * inputVertical * Time.deltaTime);
         GetComponent<Rigidbody2D>().AddForce(Vector2.right * speed * inputHorizontal * Time.deltaTime);
+    }
+
+    void checkAttack()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponent<Animator>().SetTrigger("isAttacking");
+        }
     }
 }
