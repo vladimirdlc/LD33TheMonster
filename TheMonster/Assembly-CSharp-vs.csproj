@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Game Jam Menu Template\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Game Jam Menu Template\Scripts\Effects\DecalPainter.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\Pause.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\PlayMusic.cs" />
@@ -54,10 +55,12 @@
      <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Controls\TopDownController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\UI\Typewritter.cs" />
+     <Compile Include="Assets\Scripts\Weapons\IWeapon.cs" />
      <Compile Include="Assets\Scripts\Weapons\Sword.cs" />
      <None Include="Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
